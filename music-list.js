@@ -11,96 +11,95 @@
 
 let allMusic = [
   {
-
     name: "01. Style",
     artist: "Taylor Swift",
     img: "04",
-    src: "01styletaylor"
+    src: "music-1"
   },
   {
     name: "02. Come Inside Of My Hearth",
     artist: "IV Of Spades",
     img: "04",
-    src: "02comeinside"
+    src: "music-2"
   },
   {
     name: "03. I Wanna Be Yours",
     artist: "Arctic Monkeys",
     img: "04",
-    src: "03iwannabe"
+    src: "music-3"
   },
   {
     name: "04. W.H.U.T",
     artist: "Aisha Retno",
     img: "04",
-    src: "04whut"
+    src: "music-4"
   },
   {
     name: "05. Every Summertime",
     artist: "NIKI",
     img: "04",
-    src: "05summertime"
+    src: "music-5"
   },
   {
     name: "06. Jatuh Hati",
     artist: "Raisa",
     img: "04",
-    src: "06jatuhhati"
+    src: "music-6"
   },
   {
 
     name: "07. Dia",
     artist: "MALIQ & D'Essentials",
     img: "04",
-    src: "07dia"
+    src: "music-7"
   },
   {
     name: "08. Anything You Want",
     artist: "Reality Club",
     img: "04",
-    src: "08anything"
+    src: "music-8"
   },
   {
     name: "09. Teka Teki",
     artist: "Raisa",
     img: "04",
-    src: "09tekateki"
+    src: "music-9"
   },
   {
     name: "10. P.S I LOVE YOU",
     artist: "Paul Partohap",
     img: "04",
-    src: "10psiloveyou"
+    src: "music-10"
   },
   {
     name: "11. Old Love",
     artist: "yuji, putri dahlia",
     img: "04",
-    src: "11oldlove"
+    src: "music-11"
   },
   {
     name: "12. I Like U",
     artist: "NIKI",
     img: "04",
-    src: "12ilikeu"
+    src: "music-12"
   },
   {
     name: "13. Sweet",
     artist: "NIKI",
     img: "04",
-    src: "13sweet"
+    src: "music-13"
   },
   {
     name: "14. IT'S YOU (feat. keshi)",
     artist: "MAX, keshi",
     img: "04",
-    src: "14itsyou"
+    src: "music-14"
   },
   {
     name: "15. Those Eyes",
     artist: "New West",
     img: "04",
-    src: "15thoseyes"
+    src: "music-15"
   },
   // like this paste it and remember to give comma after ending of this bracket }
   // {

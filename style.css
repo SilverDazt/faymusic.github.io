@@ -1,439 +1,34 @@
-@import url("https://fonts.googleapis.com/css2?family=Sora:wght@200;400;500;600;700;800&display=swap");
-
-:root {
-  --main-color: #6c2fbd;
-  --text-color: #fff;
-  --pink: rgba(255, 238, 0, 0.993);
-  --violet: rgb(255, 0, 157);
-  --lightblack: #ffffff;
-  --white: #ffffff;
-  --darkwhite: #cecaca;
-  --pinkshadow: #ffcbdd;
-  --lightbshadow: rgba(0, 0, 0, 0.15);
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 * {
   margin: 0;
-  scroll-behavior: smooth;
-  scroll-margin-top: 30px;
-  box-sizing: border-box;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --pink: #ea00ff;
+  --violet: #ffee00;
+  --lightblack: #ffffff;
+  --white: #111111;
+  --darkwhite: #000000;
+  --pinkshadow: #ffffff;
+  --lightbshadow: rgba(255, 255, 255, 0.445);
 }
 
 body {
-  background-color: #131414;
-  font-family: "sora";
-}
-
-a {
-  text-decoration: none;
-}
-
-.container {
-  width: 900px;
-  background-color: transparent;
-  margin: auto;
-}
-
-.content {
-  display: flex;
-  gap: 100px;
-}
-
-.sidebar {
-  float: left;
-  margin-top: 70px;
-  position: fixed;
-  width: 200px;
-  top: -10px;
-  left: 5px;
-  margin-left: 45px;
-}
-
-.sidebar .menu_list {
-  gap: 60px;
-}
-
-.menu_list img {
-  width: 150px;
-  margin-left: 23px;
-}
-
-.sidebar .list {
-  font-size: 15px;
-  padding: 7px;
-  margin-top: 10px;
-  width: 140px;
-  text-align: center;
-  border-radius: 5px;
-  box-sizing: border-box;
-  margin: 10px auto 0;
-}
-
-.list:hover {
-  background-color: #262626;
-  transform: scale(1.1);
-  color: white;
-}
-
-.list:focus {
-  background-color: #262626;
-  transform: scale(1);
-}
-
-.list {
-  display: block;
-  color: rgb(163 163 163);
-  gap: 10px;
-}
-
-.list a {
-  color: rgb(163 163 163);
-  text-decoration: none;
-  text-align: right;
-}
-
-.sosmed {
-  width: 30px;
-  margin-bottom: -6px;
-  margin-right: 5px;
-}
-
-.about {
-  display: flex;
-  flex-direction: row;
-  place-items: center;
-  margin-top: 100px;
-}
-
-.about .profil {
-  animation: floatAnimation 2s ease infinite;
-}
-
-.deskripsi_diri h2,
-p {
-  color: rgb(163 163 163);
-}
-
-.deskripsi p {
-  font-size: 18px;
-  font-weight: lighter;
-  margin-top: 10px;
-  line-height: 27px;
-  text-align: left;
-}
-
-.deskripsi h2 {
-  font-size: 40px !important;
-  color: rgb(255, 255, 255);
-}
-
-.skills {
-  width: 830px;
-  margin: auto;
-  margin-left: 70px;
-}
-
-.skills h2 {
-  color: rgba(255, 255, 255, 0.623);
-  text-align: center;
-  margin-top: 90px;
-}
-
-.skill {
-  display: flex;
-  margin: auto;
-  justify-content: center;
-  gap: 50px;
-  text-align: center;
-  margin-top: 40px;
-  object-fit: cover;
-}
-
-.skill a .icon {
-  width: 147px;
-}
-
-.skill a {
-  color: rgb(224, 224, 224);
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.skill img:hover {
-  opacity: 0.6;
-  animation: iconAnimation 0.8s ease-in-out infinite;
-}
-
-.console_container {
-  position: absolute;
-  text-align: center;
-  width: 80%;
-  color: #f9fcfe;
-  font-weight: 900;
-  letter-spacing: 2px;
-  font-size: 40px;
-  top: 40px;
-  margin-left: -40px;
-}
-
-.container_project {
-  width: 830px;
-  margin: auto;
-  margin-left: 70px;
-}
-
-.heading {
-  color: white;
-  text-align: center;
-  font-size: 35px;
-  margin-top: 150px;
-}
-
-.project {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  place-items: center;
-  grid-row-gap: 30px;
-  margin-top: 10px;
-}
-
-.card_project {
-  box-shadow: rgba(221, 221, 221, 0.15) 10px 18px 50px 0px;
-  border-radius: 12px;
-  margin: 30px;
-  justify-self: center;
-  align-self: center;
-}
-
-.gambar_project {
-  object-fit: cover;
-  width: 100%;
-}
-
-.gambar_project img {
-  border-radius: 5px;
-  transition: all 1s ease;
-  max-width: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.gambar_project img:hover {
-  transform: scale(1.16);
-}
-
-.deskripsi_project {
-  padding: 0 1rem 1.25rem;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  color: black;
-  padding-bottom: 40px;
-}
-
-.deskripsi_project h2 {
-  margin-top: 10px;
-  color: rgba(255, 255, 255, 0.781);
-}
-
-.deskripsi_project p {
-  color: #aeaeae;
-  margin-top: 5px;
-}
-
-.deskripsi_project .btn-grad {
-  display: inline-block;
-  background: var(--main-color);
-  border-radius: 1rem;
-  width: 150px;
-  padding: 10px;
-  box-shadow: 0 0 1rem var(--main-color);
-  font-size: 1rem;
-  color: rgb(255, 255, 255);
-  font-weight: 600;
-  transition: 0.5s ease;
-  border: none;
-  margin-top: 12px;
-  cursor: pointer;
-}
-
-.btn-grad:hover {
-  box-shadow: none;
-  color: rgba(255, 255, 255, 0.658);
-}
-
-.container_inters {
-  width: 830px;
-  margin: auto;
-  margin-left: 70px;
-}
-
-.kotak_hobby {
-  width: 830px;
-  margin: auto;
-  margin-left: 70px;
-}
-
-.hobbys {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  place-items: center;
-  grid-column-gap: 50px;
-}
-
-.hobby {
-  text-align: center;
-}
-
-.hobby-tengah {
-  grid-column: span 2;
-  margin-top: 15px;
-}
-
-.hobby-tengah .desc_hobby {
-  padding-inline: 150px;
-}
-
-.img_hobby img {
-  width: 280px;
-  place-items: center;
-}
-
-.desc_hobby {
-  padding-inline: 30px;
-  text-align: center;
-}
-
-.desc_hobby h3 {
-  color: white;
-  text-align: center;
-}
-
-.contact {
-  width: 830px;
-  margin-left: 70px;
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  align-items: center;
-  grid-gap: 6rem;
-}
-
-.contact-form h1 {
-  font-size: 50px;
-  color: white;
-  margin-bottom: 20px;
-  display: flex;
-  margin-top: 170px;
-}
-
-.contact-form span {
-  color: orange;
-}
-
-.contact-form p {
-  color: gray;
-  letter-spacing: 1px;
-  line-height: 30px;
-  font-size: 1.1rem;
-  margin-bottom: 3rem;
-  margin-top: 1rem;
-}
-
-.contact-form form {
-  position: relative;
-}
-
-.contact-form form input,
-form textarea {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  outline: none;
-  background: rgb(48, 47, 47);
-  color: white;
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 0.7rem;
-  border-radius: 10px;
-}
-
-.contact-form textarea {
-  resize: none;
-  height: 200px;
-}
-
-.contact-form form .btn {
-  display: inline-block;
-  background: orange;
-  color: black;
-  font-size: 1.1rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-weight: 600;
-  border: 2px solid transparent;
-  border-radius: 10px;
-  width: 225px;
-  transition: ease 0.2s;
-  cursor: pointer;
-  margin-left: 10px;
-  text-align: center;
-}
-
-.contact-form form .btn:hover {
-  border: 2px solid orange;
-  color: white;
-  background: transparent;
-  transform: scale(1.1);
-}
-
-.contact-img img {
-  max-width: 100%;
-  width: 720px;
-  height: auto;
-  border-radius: 10px;
-  -webkit-transition: 0.4s ease;
-  transition: 0.4s ease;
-  border-radius: 12px;
-}
-
-.zoom-effect {
-  position: relative;
-  width: 100%;
-  height: 420px;
-  margin: 0 auto;
-  overflow: hidden;
-  border-radius: 12px;
-}
-
-.kotak {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.kotak img {
-  -webkit-transition: 0.4s ease;
-  transition: 1s ease;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 12px;
-}
-
-.zoom-effect:hover .kotak img {
-  -webkit-transform: scale(1.78);
-  transform: scale(1.78);
-}
-
-.container-fav-music {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  /* background: url(../images/bg-white.jpg);
-  background-position: center;
-  background-size: cover; */
+  background: rgb(14, 14, 14);
 }
 
 .wrapper {
@@ -442,7 +37,8 @@ form textarea {
   overflow: hidden;
   position: relative;
   border-radius: 15px;
-  box-shadow: rgba(221, 221, 221, 0.15) 10px 18px 50px 0px;
+  background: var(--white);
+  box-shadow: 0px 6px 15px var(--lightbshadow);
 }
 
 .wrapper i {
@@ -461,19 +57,17 @@ form textarea {
 
 .top-bar i {
   font-size: 30px;
-  opacity: 0;
-  color: white;
+  color: var(--lightblack);
 }
 
 .top-bar i:first-child {
   margin-left: -7px;
-  opacity: 0;
 }
 
 .top-bar span {
-  font-size: 20px;
+  font-size: 18px;
   margin-left: -3px;
-  color: white;
+  color: var(--lightblack);
 }
 
 .img-area {
@@ -493,17 +87,15 @@ form textarea {
 
 .song-details {
   text-align: center;
-  margin: 19px 0;
+  margin: 30px 0;
 }
 
 .song-details p {
-  color: white;
-  margin-top: 10px;
+  color: var(--lightblack);
 }
 
 .song-details .name {
   font-size: 21px;
-  margin-top: 10px;
 }
 
 .song-details .artist {
@@ -555,7 +147,7 @@ form textarea {
 
 .song-timer span {
   font-size: 13px;
-  color: white;
+  color: var(--lightblack);
 }
 
 .controls {
@@ -592,12 +184,8 @@ form textarea {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: var(--white);
-  transition: 0.24s all;
-}
-
-.play-pause:hover {
-  transform: scale(1.1);
+  background: linear-gradient(var(--white) 0%, var(--darkwhite) 100%);
+  box-shadow: 0px 0px 5px var(--pink);
 }
 
 .play-pause::before {
@@ -623,7 +211,7 @@ form textarea {
 
 .music-list {
   position: absolute;
-  background: #131414;
+  background: var(--white);
   width: 100%;
   left: 0;
   bottom: -55%;
@@ -632,7 +220,7 @@ form textarea {
   z-index: 5;
   padding: 15px 30px;
   border-radius: 15px;
-  box-shadow: rgba(221, 221, 221, 0.15) 10px 18px 50px 0px;
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.15s ease-out;
 }
 
@@ -679,7 +267,7 @@ form textarea {
   padding-bottom: 10px;
   margin-bottom: 5px;
   color: var(--lightblack);
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #E5E5E5;
 }
 
 .music-list ul li:last-child {
@@ -701,78 +289,4 @@ ul li .audio-duration {
 ul li.playing {
   pointer-events: none;
   color: var(--violet);
-}
-
-.pembungkus-music {
-  margin-top: 140px;
-  margin-bottom: 100px;
-  height: auto;
-}
-
-.pembungkus-music h1 {
-  font-weight: 700;
-  width: 98vw;
-  text-align: center;
-  font-size: 38px;
-}
-
-@keyframes floatAnimation {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-20px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes iconAnimation {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-7px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@media only screen and (max-width: 415px) {
-  .console_container {
-    text-align: center;
-    color: #f9fcfe;
-    width: 900px;
-    font-weight: 900;
-    letter-spacing: 2px;
-    font-size: 40px;
-    top: 70px;
-    margin-left: 50px;
-  }
-
-  .sidebar {
-    display: none;
-  }
-
-  .about {
-    margin-top: 160px;
-  }
-
-  .project {
-    margin-right: 50px;
-  }
-
-  .container-fav-music {
-    width: 900px;
-  }
-
-  .contact {
-    margin-left: 0;
-  }
 }
