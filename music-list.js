@@ -101,6 +101,66 @@ let allMusic = [
     img: "04",
     src: "music-15"
   },
+  {
+    name: "16. Love Again",
+    artist: "Daniel Caesar",
+    img: "04",
+    src: "music-16"
+  },
+  {
+    name: "17. Our First Time",
+    artist: "Bruno Mars",
+    img: "04",
+    src: "music-17"
+  },
+  {
+    name: "18. Let Me Go",
+    artist: "Daniel Caesar",
+    img: "04",
+    src: "music-18"
+  },
+  {
+    name: "19. Please Do Not Lean",
+    artist: "Daniel Caesar",
+    img: "04",
+    src: "music-19"
+  },
+  {
+    name: "20. Superpowers",
+    artist: "Daniel Caesar",
+    img: "04",
+    src: "music-20"
+  },
+  {
+    name: "21. Toronto 2014",
+    artist: "Daniel Caesar",
+    img: "04",
+    src: "music-21"
+  },
+  {
+    name: "22. Valentina",
+    artist: "Daniel Caesar",
+    img: "04",
+    src: "music-22"
+  },
+  {
+    name: "23. Do You Like Me",
+    artist: "Daniel Caesar",
+    img: "04",
+    src: "music-23"
+  },
+  {
+    name: "24. Too Good To Say Goodbye",
+    artist: "Bruno Mars",
+    img: "04",
+    src: "music-24"
+  },
+  {
+    name: "25. For Us",
+    artist: "V",
+    img: "04",
+    src: "music-25"
+  },
   // like this paste it and remember to give comma after ending of this bracket }
   // {
   //   name: "Here is the music name",
